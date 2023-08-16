@@ -1,8 +1,9 @@
 import React from "react";
+import Watchlist from "./Watchlist";
 
 const MovieCard = ({movie, addMovie, removeMovie, list}) => {
   const button =
-    inWatchlist.length === 0 ? (
+    Watchlist.length === 0 ? (
       <button onClick={() => addMovie(movie)}>Add to List</button>
     ) : (
       <button onClick={() => removeMovie(movie)}>Remove</button>
